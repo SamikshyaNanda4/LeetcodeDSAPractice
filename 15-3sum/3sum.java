@@ -8,7 +8,7 @@ class Solution {
         int right=nums.length-1;
             while(left<right){
                 if(nums[i]+nums[left]+nums[right]==0){
-                    set.add(new ArrayList<>(List.of(nums[i],nums[left],nums[right])));
+                    set.add(Arrays.asList(nums[i],nums[left],nums[right]));
                 }
                 if(nums[i]+nums[left]+nums[right]<0){
                     left++;
