@@ -6,7 +6,7 @@ class Solution {
         return ansList;
     }
 
-    public static void backtrack(List<List<Integer>> resList,ArrayList<Integer> tempList, int[] nums){
+    public static void backtrack(List<List<Integer>> resList,List<Integer> tempList, int[] nums){
 
         //base condition 
         if(tempList.size()==nums.length){
