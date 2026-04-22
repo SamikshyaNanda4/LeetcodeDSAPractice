@@ -11,6 +11,7 @@ class Solution {
         //base condition 
         if(tempList.size()==nums.length){
             resList.add(new ArrayList<>(tempList));
+           
             return;
         }
 
@@ -23,8 +24,8 @@ class Solution {
             tempList.add(number);
 
             backtrack(resList, tempList, nums);
-
-            tempList.remove(tempList.size()-1);
+             tempList.remove(tempList.size()-1);
+            
         }
     }
 }
