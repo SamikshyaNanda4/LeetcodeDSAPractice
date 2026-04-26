@@ -5,6 +5,14 @@ class Solution {
             return n;
         }
 
-        return fib(n-1)+fib(n-2);
+        int[] indexedMap=new int[n+1];
+
+        indexedMap[0]=0;
+        indexedMap[1]=1;
+
+        for(int i=2;i<=n;i++){
+            indexedMap[i]=indexedMap[i-1]+indexedMap[i-2];
+        }
+        return indexedMap[n];
     }
 }
