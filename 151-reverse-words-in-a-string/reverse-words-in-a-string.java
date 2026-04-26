@@ -1,6 +1,6 @@
 class Solution {
     public String reverseWords(String s) {
-        StringBuilder res=new StringBuilder("");
+        StringBuilder res=new StringBuilder();
 
         int startIndex=s.length()-1;
 
