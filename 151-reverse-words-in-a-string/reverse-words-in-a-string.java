@@ -19,6 +19,6 @@ class Solution {
                 res.append(" ").append(s.substring(startIndex+1,endIndex+1));
             }
         }
-        return res.toString();
+        return new String(res);
     }
 }
