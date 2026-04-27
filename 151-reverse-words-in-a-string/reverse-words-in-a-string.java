@@ -8,7 +8,7 @@ class Solution {
                 startIndex--;
             }
             if(startIndex<0){
-                break;
+                continue;
             }
             int endIndex=startIndex;
             while(startIndex>=0 && s.charAt(startIndex)!=' '){
